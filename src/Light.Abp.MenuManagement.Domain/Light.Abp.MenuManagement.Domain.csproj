@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Light.Abp.MenuManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.0.0" />
+    <ProjectReference Include="..\Light.Abp.MenuManagement.Domain.Shared\Light.Abp.MenuManagement.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

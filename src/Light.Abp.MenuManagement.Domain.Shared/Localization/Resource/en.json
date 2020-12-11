@@ -1,0 +1,12 @@
+{
+  "culture": "en",
+  "texts": {
+    "ManageYourProfile": "Manage your profile",
+    "MenuManagement": "MenuManagement",
+    "Permission:View": "Permission:View",
+    "Permission:Create": "Permission:Create",
+    "Permission:Update": "Permission:Update",
+    "Permission:Delete": "Permission:Delete",
+    "Permission:Read": "Permission:Read"
+  }
+}
