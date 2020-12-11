@@ -1,0 +1,12 @@
+{
+  "culture": "zh-Hant",
+  "texts": {
+    "ManageYourProfile": "管理個人資料",
+    "MenuManagement": "菜单管理",
+    "Permission:View": "查看",
+    "Permission:Create": "创建",
+    "Permission:Update": "更新",
+    "Permission:Delete": "删除",
+    "Permission:Read": "读取"
+  }
+}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Light.Abp.MenuManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="4.0.0" />
+    <ProjectReference Include="..\Light.Abp.MenuManagement.Application.Contracts\Light.Abp.MenuManagement.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
