@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using Light.Abp.MenuManagement.Authorization;
 using Light.Abp.MenuManagement.Dtos;
 using Light.Abp.MenuManagement.Localization;
@@ -33,9 +34,9 @@ namespace Light.Abp.MenuManagement
 
         protected override string DeletePolicyName => AbpMenuManagementPermissions.Menu.Delete;
 
-        protected override IQueryable<AbpMenu> CreateFilteredQuery(QueryMenuDto input)
+        protected override async Task<IQueryable<AbpMenu>> CreateFilteredQueryAsync(QueryMenuDto input)
         {
-            IQueryable<AbpMenu> queryable = Repository.AsQueryable();
+            IQueryable<AbpMenu> queryable = (await Repository.GetQueryableAsync());
             if (!string.IsNullOrWhiteSpace(input.Filter))
             {
                 queryable = queryable.Where(x => x.MenuName.Contains(input.Filter) );
